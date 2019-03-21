@@ -130,7 +130,6 @@ public class UserController {
             return ServerResponse.createByErrorCodeMessage(ResponseCode.NEED_LOGIN.getCode(),
                     "未登录，需要强制登录");
         }
-
         return iUserService.getUserDetailInfo(currentUser.getId());
     }
 }
